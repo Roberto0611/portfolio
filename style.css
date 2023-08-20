@@ -101,6 +101,10 @@ body {
     border-radius: 3px;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /* DIVIDER */
 
 .divider {
