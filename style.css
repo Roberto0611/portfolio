@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    background-image: url('img/banner.png');
+    background-size: auto;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 166px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente */
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%; /* Ajusta el ancho según tu diseño */
+    overflow: hidden; /* Para que la animación de escritura no se muestre fuera del fondo */
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Para la animación de escritura */
+    white-space: nowrap; /* Para que el texto no se divida en varias líneas */
+    border-right: 2px solid white; /* Simulación del cursor de escritura */
+    animation: typing 2s steps(100, end) forwards; /* 5s de duración, 30 pasos */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Comienza sin texto */
+    }
+    to {
+        width: 100%; /* Llega al ancho completo */
+    }
+}
+
+/* Secciones */
+.about,
+.skills,
+.social,
+.projects {
+    padding: 40px;
+}
+
+.skills ul,
+.social ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li,
+.social li {
+    margin-bottom: 10px;
+}
+
+.social li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
