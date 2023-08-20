@@ -199,3 +199,42 @@ body {
         max-width: 400px; /* Ancho máximo de la tarjeta en pantallas pequeñas */
     }
 }
+
+/* SECTION SOCIALES */
+.social {
+    padding: 40px;
+    background-color: #fff; /* Cambia el color de fondo a tu preferencia */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.social-links {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los enlaces */
+}
+
+.social-links li {
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+.social-links a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #3498db; /* Cambia el color del enlace al pasar el cursor */
+}
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    background-color: #333; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a blanco */
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
