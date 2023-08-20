@@ -68,6 +68,18 @@ body {
     color: #333;
 }
 
+/* ANIMATIONS */
+.skills, .projects, .about {
+    opacity: 0; /* Inicialmente, ocultamos las secciones */
+    transform: translateY(20px); /* Desplazamos hacia abajo para la aparición */
+    transition: opacity 2s ease, transform 2s ease; /* Agregamos transiciones */
+}
+
+.skills.show, .projects.show, .about.show {
+    opacity: 1; /* Hacemos visible la sección */
+    transform: translateY(0); /* Sin desplazamiento */
+}
+
 /* SECTION ABOUT */
 .about {
     padding: 40px;
@@ -206,7 +218,7 @@ body {
 
 /* SECTION SOCIALES */
 .social {
-    padding: 40px;
+    padding: 0px;
     background-color: #fff; /* Cambia el color de fondo a tu preferencia */
     text-align: center; /* Centra el contenido horizontalmente */
 }
